@@ -57,7 +57,12 @@ export const adminApi = {
   updateUserIp: (id: string, fixedIp: string) =>
     api.patch(`/admin/users/${id}/ip`, { fixedIp }),
 
+  updateUserTelegram: (id: string, telegramId: string) =>
+    api.patch(`/admin/users/${id}/telegram`, { telegramId }),
+
   suspendUser: (id: string) => api.patch(`/admin/users/${id}/suspend`),
+
+  deleteUser: (id: string) => api.delete(`/admin/users/${id}`),
 
   getLogs: (params?: {
     page?: number;
