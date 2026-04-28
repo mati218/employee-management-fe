@@ -221,15 +221,12 @@ function RegisterContent() {
                 className="input-field font-mono"
                 placeholder="e.g. 5612500412"
               />
-              {/* Clear guide */}
-              <div className="mt-2 p-3 bg-blue-50 border border-blue-100 rounded-lg space-y-1">
-                <p className="text-xs font-semibold text-blue-800">How to get your Telegram ID:</p>
-                <p className="text-xs text-blue-700">1. Open Telegram app</p>
-                <p className="text-xs text-blue-700">2. Search <span className="font-mono font-bold">@userinfobot</span></p>
-                <p className="text-xs text-blue-700">3. Send <span className="font-mono font-bold">/start</span></p>
-                <p className="text-xs text-blue-700">4. Copy the <span className="font-bold">Id:</span> number (e.g. <span className="font-mono">5612500412</span>)</p>
-                <p className="text-xs text-red-600 font-medium mt-1">⚠️ Do NOT enter your phone number or username — only the numeric ID</p>
-              </div>
+              {/* Single-line process hint */}
+              <p className="text-xs text-gray-400 mt-1">
+                Telegram →{' '}
+                <a href="https://t.me/userinfobot" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline font-mono">@userinfobot</a>
+                {' '}→ /start → copy <span className="font-mono">Id:</span> number &nbsp;·&nbsp; numbers only, not username
+              </p>
             </div>
 
             {/* Open Bot button */}
