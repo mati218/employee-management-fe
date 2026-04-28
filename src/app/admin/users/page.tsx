@@ -303,7 +303,7 @@ function AllUsersContent() {
                   value={newTelegramId}
                   onChange={(e) => setNewTelegramId(e.target.value)}
                   className="input-field font-mono"
-                  placeholder="e.g. 5612500494"
+                  placeholder="e.g. 5612500412"
                 />
                 <p className="text-xs text-gray-400 mt-1">
                   User can get their ID from <span className="font-mono">@userinfobot</span> on Telegram
